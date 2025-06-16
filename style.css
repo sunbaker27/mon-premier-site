@@ -741,7 +741,7 @@ footer {
     height: 300px;
     object-fit: cover;
     display: block;
-    filter: brightness(0.7);
+    /* filter: brightness(0.7); */ /* Supprimé pour un rendu plus naturel */
     transition: filter 0.3s ease;
 }
 
@@ -794,7 +794,7 @@ footer {
     height: 300px;
     object-fit: cover;
     display: block;
-    filter: brightness(0.7);
+    /* filter: brightness(0.7); */ /* Supprimé pour un rendu plus naturel */
     transition: filter 0.3s ease;
 }
 
