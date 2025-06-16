@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- La partie head contient les informations sur la page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Archives sunbaker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Cette ligne permet de lier le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <!-- La partie body contient tout ce qui est visible sur la page -->
+
+    <header class="site-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero-section">
+            <div class="hero-content">
+                <h1>Projet Sunbaker</h1>
+                <p class="subtitle">de Sunny-Hugo Boulanger</p>
+                <p class="description">Explorez des fragments d'un passé artistique préservé</p>
+            </div>
+        </section>
+
+        <section id="projets" class="projects-section">
+            <h2>Projets Classifiés</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <a href="projet1.html" target="_blank" class="project-link">
+                        <div class="project-image">
+                            <img src="birthdaycake.png" alt="Projet 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Birthday Cake</h3>
+                            <p>Court-métrage sous le thème de la "Disparition"</p>
+                            <div class="project-tags">
+                                <span>Lycée</span>
+                                <span>Solo</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x350" alt="Projet 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Écho des Saisons</h3>
+                        <p>Étude des cycles naturels à travers la sculpture sonore et les projections holographiques.</p>
+                        <div class="project-tags">
+                            <span>Art Sonore</span>
+                            <span>Installation Interactive</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x350" alt="Projet 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Codex Lumina</h3>
+                        <p>Manuscrit illuminé numérique explorant l'interaction entre la lumière et les ombres vectorielles.</p>
+                        <div class="project-tags">
+                            <span>Illustration Vectorielle</span>
+                            <span>Typographie Expérimentale</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="galerie" class="gallery-section">
+            <h2>Galerie Récupérée</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x350" alt="Œuvre 1">
+                    <div class="gallery-overlay">
+                        <h3>Artéfact #001</h3>
+                        <p>Exploration des textures fractales</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x350" alt="Œuvre 2">
+                    <div class="gallery-overlay">
+                        <h3>Vestige Lumineux</h3>
+                        <p>Peinture digitale réactive</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x350" alt="Œuvre 3">
+                    <div class="gallery-overlay">
+                        <h3>Donnée Corrompue</h3>
+                        <p>Assemblage cinétique post-moderne</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x350" alt="Œuvre 4">
+                    <div class="gallery-overlay">
+                        <h3>Transmissions Oubliées</h3>
+                        <p>Photographie spectrale</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Établissez le contact</h3>
+                    <p>Ces archives sont fragiles, mais le dialogue est la clé de leur préservation. N'hésitez pas à me contacter.</p>
+                    <div class="qr-code-container">
+                        <img src="placeholder_qr.png" alt="QR Code pour plus d'informations" class="qr-code">
+                        <p class="qr-caption">Scannez pour des informations supplémentaires</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/sunbaker27/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.behance.net/sunbaker" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="https://www.linkedin.com/in/sunny-hugo-boulanger-23863b355/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@sunbaker27" class="social-link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+                    <div id="form-messages"></div>
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <textarea name="message" placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer la transmission</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 - Les Archives Oubliées - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.contact-form');
+            const messageDiv = document.getElementById('form-messages');
+
+            function displayMessage(message, type) {
+                messageDiv.textContent = message;
+                messageDiv.style.padding = '1rem';
+                messageDiv.style.borderRadius = '5px';
+                messageDiv.style.marginTop = '1rem';
+
+                if (type === 'success') {
+                    messageDiv.style.backgroundColor = 'rgba(60, 179, 113, 0.2)';
+                    messageDiv.style.color = '#3CB371';
+                    form.reset();
+                } else if (type === 'error') {
+                    messageDiv.style.backgroundColor = 'rgba(220, 20, 60, 0.2)';
+                    messageDiv.style.color = '#DC143C';
+                }
+
+                setTimeout(() => {
+                    messageDiv.textContent = '';
+                    messageDiv.style.backgroundColor = 'transparent';
+                    messageDiv.style.color = '';
+                }, 7000);
+            }
+
+            form.addEventListener('submit', async function(event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        displayMessage('Message envoyé avec succès !', 'success');
+                    } else {
+                        displayMessage('Une erreur est survenue. Veuillez réessayer.', 'error');
+                    }
+                } catch (error) {
+                    console.error('Erreur lors de l\'envoi du formulaire:', error);
+                    displayMessage('Oups ! Une erreur inattendue s\'est produite.', 'error');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

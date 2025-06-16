@@ -1,0 +1,16 @@
+# Dépendances
+/vendor/
+composer.phar
+composer.lock
+
+# Fichiers de configuration sensibles
+.env
+*.env
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires
+*.log
+*.tmp 
