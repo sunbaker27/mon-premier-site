@@ -44,7 +44,7 @@ function verifyRecaptcha($recaptcha_response) {
     $result = json_decode($response);
 
     // Log de la réponse complète de reCAPTCHA
-    // error_log("reCAPTCHA Response: " . print_r($result, true));
+    error_log("reCAPTCHA Response: " . print_r($result, true));
 
     return $result->success;
 }
