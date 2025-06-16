@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -48,10 +50,56 @@
                 <a href="index.html#projets" class="back-button">Retour aux Projets Classifiés</a>
             </div>
         </section>
+
+        <section class="project-gallery-section">
+            <h2>Galerie du Projet</h2>
+            <div class="gallery-grid">
+                <!-- Cette grille sera vide ou contiendra d'autres éléments si besoin -->
+            </div>
+
+            <!-- Section pour les croquis et concepts -->
+            <h3 class="gallery-collection-title">Croquis et Concepts</h3>
+            <div class="sketches-entry">
+                <a href="photosprojetbirthdaycake/IMG_20250616_161046.jpg" data-fancybox="sketches" data-caption="Birthday Cake - Croquis 1 : Moi qui me cherche, réal. total impro">
+                    <img src="photosprojetbirthdaycake/IMG_20250616_161046.jpg" alt="Aperçu des Croquis" class="sketches-thumbnail">
+                    <div class="sketches-overlay">
+                        <h3>Voir les Croquis & Concepts</h3>
+                        <p>Explorez les études, idées et concepts</p>
+                    </div>
+                </a>
+                <!-- Liens cachés vers toutes les captures et croquis pour Fancybox -->
+                <a href="birthdaycake.png" data-fancybox="sketches" data-caption="Birthday Cake - Concept : Le gâteau d'anniversaire" style="display:none;"></a>
+                <a href="cheese.png" data-fancybox="sketches" data-caption="Birthday Cake - Concept : Le fromage" style="display:none;"></a>
+                <a href="photosprojetbirthdaycake/IMG_20250616_161130.jpg" data-fancybox="sketches" data-caption="Birthday Cake - Croquis 2 : Paysages et l'idée du souvenir non oubliés" style="display:none;"></a>
+                <a href="photosprojetbirthdaycake/IMG_20250616_161118.jpg" data-fancybox="sketches" data-caption="Birthday Cake - Croquis 3 : Disparition du moi, affiches avec photos de l'ancien moi" style="display:none;"></a>
+                <a href="photosprojetbirthdaycake/IMG_20250616_161123.jpg" data-fancybox="sketches" data-caption="Birthday Cake - Croquis 4 : Idée d'amnésie traumatique, écran noir, sensation de vide" style="display:none;"></a>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>© 2024 - Les Archives sunbaker - Tous droits réservés</p>
     </footer>
+
+    <script>
+        // Initialisation de Fancybox avec des options améliorées
+        Fancybox.bind("[data-fancybox]", {
+            loop: true,
+            buttons: [
+                "zoom",
+                "slideShow",
+                "fullScreen",
+                "close"
+            ],
+            animationEffect: "fade",
+            transitionEffect: "fade",
+            wheel: "slide", // Permet de naviguer avec la molette de la souris
+            keyboard: {
+                Escape: "close",
+                ArrowLeft: "prev",
+                ArrowRight: "next"
+            }
+        });
+    </script>
 </body>
 </html> 
