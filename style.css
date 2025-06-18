@@ -914,7 +914,19 @@ footer {
 }
 
 .captures-entry .captures-overlay p {
-    margin: 0.5rem 0 0;
-    font-size: 1rem;
-    opacity: 0.9;
+    font-size: 0.9rem;
+    color: var(--text-main-color);
+    margin-top: 0.5rem;
+}
+
+/* Style simple pour le canvas des particules */
+#particles-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.8;
 } 

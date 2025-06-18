@@ -13,4 +13,73 @@ Thumbs.db
 
 # Fichiers temporaires
 *.log
-*.tmp 
+*.tmp
+
+# Fichiers temporaires Windows
+*.tmp
+*.temp
+*.dat
+*.lockfile
+
+# Dossiers temporaires
+dgfoxlzg/
+node-compile-cache/
+vscode-typescript/
+backup-local-files/
+VideoPadCache/
+NuGetScratch/
+ActivityVisualCache/
+DiskCache/
+hsperfdata_*/
+edge_BITS_*/
+scoped_dir*/
+steam/
+WinGet/
+msdt/
+msdtadmin/
+MessagingAddin/
+Image-Line/
+
+# Fichiers système
+*.xml
+*.cab
+*.msi
+*.json (sauf ceux du projet)
+*.arb/
+*.jx1/
+*.0ic/
+*.knm/
+
+# Fichiers de session
+.ses
+qtsingleapp-*-lockfile
+
+# Fichiers de debug
+cv_debug.log
+mat-debug-*.log
+jusched.log
+JavaDeployReg.log
+ResolveInstallLog.txt
+ResolvePackage.log
+Setup Log *.txt
+dd_*.log
+LAPTOP-*.log
+
+# Fichiers d'installation
+au-descriptor-*.xml
+*.tmp
+*.dat
+
+# Garder seulement les fichiers du projet
+!index.html
+!style.css
+!particles.js
+!projet1.html
+!send-mail.php
+!composer.json
+!favicon.webp
+!birthdaycake.png
+!cheese.png
+!DaylightCycle.cs
+!photosprojetbirthdaycake/
+!tr-ee-9nVcwM/ 
