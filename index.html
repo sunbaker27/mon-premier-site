@@ -11,6 +11,9 @@
     <!-- Cette ligne permet de lier le fichier CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Fancybox pour la galerie interactive -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="favicon.webp">
     <!-- reCAPTCHA -->
@@ -90,33 +93,91 @@
             <h2>Galerie Récupérée</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x350" alt="Œuvre 1">
-                    <div class="gallery-overlay">
-                        <h3>Artéfact #001</h3>
-                        <p>Exploration des textures fractales</p>
-                    </div>
+                    <a href="storyboard_001.jpg" data-fancybox="storyboards" data-caption="Storyboard #001 - Première séquence">
+                        <img src="storyboard_001.jpg" alt="Storyboard #001">
+                        <div class="gallery-overlay">
+                            <h3>Storyboard #001</h3>
+                            <p>Première séquence</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x350" alt="Œuvre 2">
-                    <div class="gallery-overlay">
-                        <h3>Vestige Lumineux</h3>
-                        <p>Peinture digitale réactive</p>
-                    </div>
+                    <a href="storyboard_002.jpg" data-fancybox="storyboards" data-caption="Storyboard #002 - Plan séquence">
+                        <img src="storyboard_002.jpg" alt="Storyboard #002">
+                        <div class="gallery-overlay">
+                            <h3>Storyboard #002</h3>
+                            <p>Plan séquence</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x350" alt="Œuvre 3">
-                    <div class="gallery-overlay">
-                        <h3>Donnée Corrompue</h3>
-                        <p>Assemblage cinétique post-moderne</p>
-                    </div>
+                    <a href="storyboard_003.jpg" data-fancybox="storyboards" data-caption="Storyboard #003 - Transition">
+                        <img src="storyboard_003.jpg" alt="Storyboard #003">
+                        <div class="gallery-overlay">
+                            <h3>Storyboard #003</h3>
+                            <p>Transition</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x350" alt="Œuvre 4">
-                    <div class="gallery-overlay">
-                        <h3>Transmissions Oubliées</h3>
-                        <p>Photographie spectrale</p>
-                    </div>
+                    <a href="storyboard_004.jpg" data-fancybox="storyboards" data-caption="Storyboard #004 - Climax">
+                        <img src="storyboard_004.jpg" alt="Storyboard #004">
+                        <div class="gallery-overlay">
+                            <h3>Storyboard #004</h3>
+                            <p>Climax</p>
+                        </div>
+                    </a>
                 </div>
+                <!-- Images supplémentaires cachées pour la galerie Storyboards -->
+                <a href="storyboard_005.jpg" data-fancybox="storyboards" data-caption="Storyboard #005 - Résolution" style="display:none;"></a>
+                <a href="storyboard_005bis.jpg" data-fancybox="storyboards" data-caption="Storyboard #005bis - Variante" style="display:none;"></a>
+                <a href="storyboard_006.jpg" data-fancybox="storyboards" data-caption="Storyboard #006 - Épilogue" style="display:none;"></a>
+                <a href="storyboard_007.jpg" data-fancybox="storyboards" data-caption="Storyboard #007 - Plan final" style="display:none;"></a>
+            </div>
+            
+            <!-- Section séparée pour les croquis -->
+            <h3 style="margin-top: 4rem; text-align: center; color: var(--text-accent-color); font-family: var(--font-primary); font-size: 2rem; letter-spacing: 2px;">Croquis et Études</h3>
+            <div class="gallery-grid" style="margin-top: 2rem;">
+                <div class="gallery-item">
+                    <a href="croquis_001.jpg" data-fancybox="croquis" data-caption="Croquis #001 - Étude de personnage">
+                        <img src="croquis_001.jpg" alt="Croquis #001">
+                        <div class="gallery-overlay">
+                            <h3>Croquis #001</h3>
+                            <p>Étude de personnage</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="croquis_002.jpg" data-fancybox="croquis" data-caption="Croquis #002 - Concept visuel">
+                        <img src="croquis_002.jpg" alt="Croquis #002">
+                        <div class="gallery-overlay">
+                            <h3>Croquis #002</h3>
+                            <p>Concept visuel</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="croquis_003.jpg" data-fancybox="croquis" data-caption="Croquis #003 - Décors">
+                        <img src="croquis_003.jpg" alt="Croquis #003">
+                        <div class="gallery-overlay">
+                            <h3>Croquis #003</h3>
+                            <p>Décors</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="croquis_004.jpg" data-fancybox="croquis" data-caption="Croquis #004 - Éclairage">
+                        <img src="croquis_004.jpg" alt="Croquis #004">
+                        <div class="gallery-overlay">
+                            <h3>Croquis #004</h3>
+                            <p>Éclairage</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Images supplémentaires cachées pour la galerie Croquis -->
+                <a href="essai_BD.jpg" data-fancybox="croquis" data-caption="Essai BD #001 - Étude de bande dessinée" style="display:none;"></a>
+                <a href="essai_BD_2.jpg" data-fancybox="croquis" data-caption="Essai BD #002 - Étude de bande dessinée" style="display:none;"></a>
+                <a href="essai_BD_3.jpg" data-fancybox="croquis" data-caption="Essai BD #003 - Étude de bande dessinée" style="display:none;"></a>
             </div>
         </section>
 
@@ -157,6 +218,25 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialisation de Fancybox pour la galerie interactive
+            Fancybox.bind("[data-fancybox]", {
+                loop: true,
+                buttons: [
+                    "zoom",
+                    "slideShow",
+                    "fullScreen",
+                    "close"
+                ],
+                animationEffect: "fade",
+                transitionEffect: "fade",
+                wheel: "slide",
+                keyboard: {
+                    Escape: "close",
+                    ArrowLeft: "prev",
+                    ArrowRight: "next"
+                }
+            });
+
             const form = document.querySelector('.contact-form');
             const messageDiv = document.getElementById('form-messages');
 
