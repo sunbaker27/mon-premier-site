@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 2 - Nouveau Projet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="favicon.webp">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li><a href="index.html#projets">Projets</a></li>
+                <li><a href="index.html#galerie">Galerie</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail-section">
+            <div class="project-detail-content">
+                <h2>Projet 2</h2>
+                <img src="https://via.placeholder.com/800x400/2a2a2a/ffffff?text=Projet+2" alt="Projet 2" class="project-detail-image">
+                <p>Ceci est la page détaillée du Projet 2. Vous pouvez personnaliser cette description selon vos besoins.</p>
+                <p>Ajoutez ici les détails de votre nouveau projet, sa description, son contexte et tout ce qui est important à mentionner.</p>
+                
+                <div class="project-video-container">
+                    <iframe class="project-video"
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <p class="video-caption">Vidéo du Projet 2</p>
+                </div>
+
+                <div class="project-tags">
+                    <span>Nouveau</span>
+                    <span>Projet</span>
+                    <span>En cours</span>
+                </div>
+                <a href="index.html#projets" class="back-button">Retour aux Projets Classifiés</a>
+            </div>
+        </section>
+
+        <section class="project-gallery-section">
+            <h2>Galerie du Projet</h2>
+            <div class="gallery-grid">
+                <!-- Cette grille sera vide ou contiendra d'autres éléments si besoin -->
+            </div>
+
+            <!-- Section pour les croquis et concepts -->
+            <h3 class="gallery-collection-title">Croquis et Concepts</h3>
+            <div class="sketches-entry">
+                <a href="https://via.placeholder.com/400x300/2a2a2a/ffffff?text=Croquis+1" data-fancybox="sketches" data-caption="Projet 2 - Croquis 1">
+                    <img src="https://via.placeholder.com/400x300/2a2a2a/ffffff?text=Croquis+1" alt="Aperçu des Croquis" class="sketches-thumbnail">
+                    <div class="sketches-overlay">
+                        <h3>Voir les Croquis & Concepts</h3>
+                        <p>Explorez les études, idées et concepts</p>
+                    </div>
+                </a>
+                <!-- Liens cachés vers toutes les captures et croquis pour Fancybox -->
+                <a href="https://via.placeholder.com/800x600/2a2a2a/ffffff?text=Concept+1" data-fancybox="sketches" data-caption="Projet 2 - Concept 1" style="display:none;"></a>
+                <a href="https://via.placeholder.com/800x600/2a2a2a/ffffff?text=Concept+2" data-fancybox="sketches" data-caption="Projet 2 - Concept 2" style="display:none;"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 - Les Archives sunbaker - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        // Initialisation de Fancybox avec des options améliorées
+        Fancybox.bind("[data-fancybox]", {
+            loop: true,
+            buttons: [
+                "zoom",
+                "slideShow",
+                "fullScreen",
+                "close"
+            ],
+            animationEffect: "fade",
+            transitionEffect: "fade",
+            wheel: "slide", // Permet de naviguer avec la molette de la souris
+            keyboard: {
+                Escape: "close",
+                Delete: "close",
+                Backspace: "close",
+                PageUp: "next",
+                PageDown: "prev",
+                ArrowUp: "next",
+                ArrowDown: "prev",
+                ArrowRight: "next",
+                ArrowLeft: "prev"
+            }
+        });
+    </script>
+</body>
+</html>
